@@ -1,6 +1,14 @@
 # DynamicSize
-Dynamic layout sizing utility for Swift
+Dynamic layout sizing utility for Swift 
 
+
+### Without dynamic size
+
+![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/static.png "Static Sizing Preview")
+
+### With dynamic size
+
+![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/dynamic.png "Static Sizing Preview")
 
 
 How to use :
