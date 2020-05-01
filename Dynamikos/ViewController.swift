@@ -74,10 +74,29 @@ class DynamicView: UIView {
         return label
     }()
     
+    private let overlayLabel: UILabel = {
+           let label = UILabel()
+           label.translatesAutoresizingMaskIntoConstraints = false
+           label.font = UIFont.boldSystemFont(ofSize: 12.dynamic())
+           label.textAlignment = .right
+           label.numberOfLines = 0
+           label.textColor = .white
+           label.lineBreakMode = .byWordWrapping
+           return label
+       }()
+    
     private lazy var pictureView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        return imageView
+    }()
+    
+    private lazy var circleView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -99,8 +118,10 @@ class DynamicView: UIView {
 
         
         self.titleLabel.text = "Dynamic Sizing Title"
-        self.descriptionLabel.text = "Lets check some description for dynamic sizing and hope its work for the best."
+        self.descriptionLabel.text = "Lets check some description for dynamic sizing and hope its work for the best"
+        self.overlayLabel.text = "Lets check some overlay inside the picture view with dynamic sizing"
         self.pictureView.image = UIImage(named: "sunset")
+        self.circleView.image = UIImage(named: "weather")
     }
     
     private func setupView() {
@@ -114,9 +135,21 @@ class DynamicView: UIView {
         self.addSubview(titleLabel)
         self.addSubview(descriptionLabel)
         self.addSubview(pictureView)
+        self.addSubview(circleView)
+        self.addSubview(overlayLabel)
     }
     
     private func setupLayout() {
+        
+        circleView.centerYAnchor.constraint(equalTo: pictureView.centerYAnchor).isActive = true
+        circleView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20.dynamic()).isActive = true
+        circleView.heightAnchor.constraint(equalToConstant: 100.dynamic()).isActive = true
+        circleView.widthAnchor.constraint(equalToConstant: 100.dynamic()).isActive = true
+        
+        overlayLabel.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 10.dynamic()).isActive = true
+        overlayLabel.bottomAnchor.constraint(equalTo: pictureView.bottomAnchor, constant: -10.dynamic()).isActive = true
+        overlayLabel.leftAnchor.constraint(equalTo: circleView.rightAnchor, constant: 10.dynamic()).isActive = true
+        overlayLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10.dynamic()).isActive = true
         
         pictureView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         pictureView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
@@ -133,5 +166,7 @@ class DynamicView: UIView {
         descriptionLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -20.dynamic()).isActive = true
         descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20.dynamic()).isActive = true
     }
+    
+    
     
 }
