@@ -1,4 +1,4 @@
-# DynamicSize
+# Dynamikos
 Dynamic layout sizing utility for Swift 
 
 
@@ -13,7 +13,7 @@ Dynamic layout sizing utility for Swift
 
 
 # Installation
-Just copy the "DynamicSize.swift" file in your project
+Just copy the "Dynamikos.swift" file in your project
 
 
 # Usage
