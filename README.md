@@ -11,10 +11,12 @@ Dynamic layout sizing utility for Swift
 ![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/dynamic.png "Static Sizing Preview")
 
 
-How to use :
 
+# Installation
 Just copy the "DynamicSize.swift" file in your project
 
+
+# Usage
 > (Constant Value).dynamic()
 
 ```Swift
