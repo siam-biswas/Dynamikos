@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		632C8BC7230A78A2006FD694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C8BC6230A78A2006FD694 /* AppDelegate.swift */; };
-		632C8BC9230A78A2006FD694 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C8BC8230A78A2006FD694 /* DynamicViewController.swift */; };
+		632C8BC9230A78A2006FD694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C8BC8230A78A2006FD694 /* ViewController.swift */; };
 		632C8BCE230A78A5006FD694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C8BCD230A78A5006FD694 /* Assets.xcassets */; };
 		632C8BD1230A78A5006FD694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C8BCF230A78A5006FD694 /* LaunchScreen.storyboard */; };
-		632C8BDB230A79D1006FD694 /* DynamicSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C8BDA230A79D1006FD694 /* DynamicSize.swift */; };
+		632C8BDB230A79D1006FD694 /* Dynamikos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C8BDA230A79D1006FD694 /* Dynamikos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		632C8BC3230A78A2006FD694 /* DynamicSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicSize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		632C8BC3230A78A2006FD694 /* Dynamikos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamikos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C8BC6230A78A2006FD694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		632C8BC8230A78A2006FD694 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		632C8BC8230A78A2006FD694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		632C8BCD230A78A5006FD694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632C8BD0230A78A5006FD694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632C8BD2230A78A5006FD694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		632C8BDA230A79D1006FD694 /* DynamicSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicSize.swift; sourceTree = "<group>"; };
+		632C8BDA230A79D1006FD694 /* Dynamikos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamikos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		632C8BBA230A78A2006FD694 = {
 			isa = PBXGroup;
 			children = (
-				632C8BC5230A78A2006FD694 /* DynamicSize */,
+				632C8BC5230A78A2006FD694 /* Dynamikos */,
 				632C8BC4230A78A2006FD694 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +46,30 @@
 		632C8BC4230A78A2006FD694 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				632C8BC3230A78A2006FD694 /* DynamicSize.app */,
+				632C8BC3230A78A2006FD694 /* Dynamikos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		632C8BC5230A78A2006FD694 /* DynamicSize */ = {
+		632C8BC5230A78A2006FD694 /* Dynamikos */ = {
 			isa = PBXGroup;
 			children = (
 				632C8BC6230A78A2006FD694 /* AppDelegate.swift */,
-				632C8BC8230A78A2006FD694 /* DynamicViewController.swift */,
-				632C8BDA230A79D1006FD694 /* DynamicSize.swift */,
+				632C8BC8230A78A2006FD694 /* ViewController.swift */,
+				632C8BDA230A79D1006FD694 /* Dynamikos.swift */,
 				632C8BCD230A78A5006FD694 /* Assets.xcassets */,
 				632C8BCF230A78A5006FD694 /* LaunchScreen.storyboard */,
 				632C8BD2230A78A5006FD694 /* Info.plist */,
 			);
-			path = DynamicSize;
+			path = Dynamikos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		632C8BC2230A78A2006FD694 /* DynamicSize */ = {
+		632C8BC2230A78A2006FD694 /* Dynamikos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 632C8BD5230A78A5006FD694 /* Build configuration list for PBXNativeTarget "DynamicSize" */;
+			buildConfigurationList = 632C8BD5230A78A5006FD694 /* Build configuration list for PBXNativeTarget "Dynamikos" */;
 			buildPhases = (
 				632C8BBF230A78A2006FD694 /* Sources */,
 				632C8BC0230A78A2006FD694 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = DynamicSize;
+			name = Dynamikos;
 			productName = DynamicSize;
-			productReference = 632C8BC3230A78A2006FD694 /* DynamicSize.app */;
+			productReference = 632C8BC3230A78A2006FD694 /* Dynamikos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 632C8BBE230A78A2006FD694 /* Build configuration list for PBXProject "DynamicSize" */;
+			buildConfigurationList = 632C8BBE230A78A2006FD694 /* Build configuration list for PBXProject "Dynamikos" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				632C8BC2230A78A2006FD694 /* DynamicSize */,
+				632C8BC2230A78A2006FD694 /* Dynamikos */,
 			);
 		};
 /* End PBXProject section */
@@ -134,8 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632C8BDB230A79D1006FD694 /* DynamicSize.swift in Sources */,
-				632C8BC9230A78A2006FD694 /* DynamicViewController.swift in Sources */,
+				632C8BDB230A79D1006FD694 /* Dynamikos.swift in Sources */,
+				632C8BC9230A78A2006FD694 /* ViewController.swift in Sources */,
 				632C8BC7230A78A2006FD694 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,16 +274,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93H37DTH55;
-				INFOPLIST_FILE = DynamicSize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				DEVELOPMENT_TEAM = A7V4FPU3A3;
+				INFOPLIST_FILE = Dynamikos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siambiswas.DynamicSize;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siambiswas.Dynamikos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -294,14 +296,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93H37DTH55;
-				INFOPLIST_FILE = DynamicSize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				DEVELOPMENT_TEAM = A7V4FPU3A3;
+				INFOPLIST_FILE = Dynamikos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siambiswas.DynamicSize;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siambiswas.Dynamikos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -311,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		632C8BBE230A78A2006FD694 /* Build configuration list for PBXProject "DynamicSize" */ = {
+		632C8BBE230A78A2006FD694 /* Build configuration list for PBXProject "Dynamikos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				632C8BD3230A78A5006FD694 /* Debug */,
@@ -320,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		632C8BD5230A78A5006FD694 /* Build configuration list for PBXNativeTarget "DynamicSize" */ = {
+		632C8BD5230A78A5006FD694 /* Build configuration list for PBXNativeTarget "Dynamikos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				632C8BD6230A78A5006FD694 /* Debug */,

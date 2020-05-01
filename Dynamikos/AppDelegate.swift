@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DynamicSize
+//  Dynamikos
 //
 //  Created by Siam Biswas on 19/8/19.
 //  Copyright © 2019 Siam Biswas. All rights reserved.
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
       
         let window = UIWindow()
-        window.rootViewController = UINavigationController(rootViewController: DynamicViewController()) 
+        window.rootViewController = UINavigationController(rootViewController: ViewController()) 
         window.makeKeyAndVisible()
         
         self.window = window

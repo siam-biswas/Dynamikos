@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DynamicSize.xcodeproj">
+      location = "self:/Users/siam.biswas/Documents/Projects/DynamicSize/Dynamikos.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
-//  DynamicViewController.swift
-//  DynamicSize
+//  ViewController.swift
+//  Dynamikos
 //
 //  Created by Siam Biswas on 19/8/19.
 //  Copyright © 2019 Siam Biswas. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DynamicViewController: UITableViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

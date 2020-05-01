@@ -1,6 +1,6 @@
 //
-//  DynamicSize.swift
-//  DynamicSize
+//  Dynamikos.swift
+//  Dynamikos
 //
 //  Created by Siam Biswas on 19/8/19.
 //  Copyright © 2019 Siam Biswas. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal protocol DynamicSizable{
+internal protocol Dynamikosable{
     associatedtype D:BinaryFloatingPoint
     
     var percent:D { get }
@@ -19,7 +19,7 @@ internal protocol DynamicSizable{
     
 }
 
-internal enum DynamicSize<T:BinaryFloatingPoint>:DynamicSizable,CaseIterable{
+internal enum Dynamikos<T:BinaryFloatingPoint>:Dynamikosable,CaseIterable{
     
     typealias D = T
     case max,min,mid
@@ -56,31 +56,31 @@ internal enum DynamicSize<T:BinaryFloatingPoint>:DynamicSizable,CaseIterable{
     }
     
     var current: T {
-        return DynamicSize.allCases.reduce(0) {  $1.hasRange ? $1.percent : $0}
+        return Dynamikos.allCases.reduce(0) {  $1.hasRange ? $1.percent : $0}
     }
 }
 
 
 
-internal func Dynamic<T>(_ value:T, type:DynamicSize<T> = .max) -> T where T:BinaryFloatingPoint{
+internal func Dynamic<T>(_ value:T, type:Dynamikos<T> = .max) -> T where T:BinaryFloatingPoint{
     return value * type.fraction
 }
 
 
 extension CGFloat{
-    func dynamic(type: DynamicSize<CGFloat> = .max) -> CGFloat {
+    func dynamic(type: Dynamikos<CGFloat> = .max) -> CGFloat {
         return Dynamic(self, type: type)
     }
 }
 
 extension Int{
-    func dynamic(type: DynamicSize<CGFloat> = .max) -> CGFloat {
+    func dynamic(type: Dynamikos<CGFloat> = .max) -> CGFloat {
         return CGFloat(self).dynamic(type: type)
     }
 }
 
 extension Double{
-    func dynamic(type: DynamicSize<CGFloat> = .max) -> CGFloat {
+    func dynamic(type: Dynamikos<CGFloat> = .max) -> CGFloat {
         return CGFloat(self).dynamic(type: type)
     }
 }
