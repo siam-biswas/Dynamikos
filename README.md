@@ -13,7 +13,9 @@ Dynamic layout sizing utility for Swift
 
 How to use :
 
-(Constant Value).dynamic()
+Just copy the "DynamicSize.swift" file in your project
+
+> (Constant Value).dynamic()
 
 ```Swift
 anyView.leftAnchor.constraint(equalTo: superView.leftAnchor, constant: 20.dynamic()).isActive = true
