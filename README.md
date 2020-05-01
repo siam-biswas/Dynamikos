@@ -1,5 +1,5 @@
 # Dynamikos
-Dynamic layout sizing utility for Swift 
+Dynamic layout sizing utility in Swift 
 
 
 ### Without dynamic size
