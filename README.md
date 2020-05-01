@@ -2,11 +2,11 @@
 Dynamic layout sizing utility in Swift 
 
 
-### Without dynamic size
+### Without dynamikos
 
 ![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/static.png "Static Sizing Preview")
 
-### With dynamic size
+### With dynamikos
 
 ![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/dynamic.png "Static Sizing Preview")
 
