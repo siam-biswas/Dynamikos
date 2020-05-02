@@ -14,13 +14,11 @@ A solution for UI Consistency in Swift
 
 
 # What is Dynamikos
-Its a very simple yet useful tool for iOS developers who swore an oath to always create UI/UX programmatically. 
-
 When you are writing your UI/UX codes , have you ever felt that your design only looks good in devices with large sized display but something missing in small or medium display ?
 
 That’s because with the traditional way, UI elements are not always placed at the expected places in different devices.
 
-Now Dynamikos helps you to create consistent looking UI across the devices with different display size. 
+Now Dynamikos helps you to create consistent looking UI across the devices with different display size. Its a very simple yet useful tool for iOS developers who swore an oath to always create UI/UX programmatically. 
 
 # Theory of Dynamikos
 Dynamikos divide iPhone devices in three categories and set a specific percentage value for all of them.
@@ -62,15 +60,17 @@ To use this library in your project manually you may:
 2. for Workspaces, include the whole Dynamikos.xcodeproj
 
 # Usage
+```swift
+import Dynamikos
+```
+
 The magic is put together in a single function
 ```Swift
 constantValue.dynamic()
 ```
 By default we assume that you are setting the constant value with maximum. If you want to set with different type
 ```Swift
-constantValue.dynamic(type: .max)
-constantValue.dynamic(type: .mid)
-constantValue.dynamic(type: .min)
+constantValue.dynamic(type: .min) // available types : .max/.mid/.min
 ```
 
 With frame based layout
