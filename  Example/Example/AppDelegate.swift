@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Dynamikos
+//  Dynamikos Example
 //
 //  Created by Siam Biswas on 19/8/19.
 //  Copyright © 2019 Siam Biswas. All rights reserved.

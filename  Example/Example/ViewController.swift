@@ -1,21 +1,25 @@
 //
 //  ViewController.swift
-//  Dynamikos
+//  Dynamikos Example
 //
 //  Created by Siam Biswas on 19/8/19.
 //  Copyright © 2019 Siam Biswas. All rights reserved.
 //
 
 import UIKit
+import Dynamikos
 
 class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.isHidden = true
         tableView.register(DynamicCell.self, forCellReuseIdentifier: "DynamicCell")
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        
+        DynamikosConfig.set(max: 100, mid: 90, min: 80)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
