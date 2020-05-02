@@ -1,4 +1,8 @@
 # Dynamikos
+![CocoaPods](https://img.shields.io/cocoapods/v/SwiftyJSON.svg)
+
+[Platform](https://img.shields.io/badge/platforms-iOS%208.0)
+
 A solution for UI Consistency in Swift 
 
 ### Without dynamikos
@@ -38,8 +42,25 @@ Min (80%): (height: 32, width: 48)
 ```
 
 # Integration
-just drag "Dynamikos.swift" file to the project tree
+#### CocoaPods (iOS 8+)
 
+You can use [CocoaPods](http://cocoapods.org/) to install `Dynamikos` by adding it to your `Podfile`:
+
+```ruby
+platform :ios, '8.0'
+use_frameworks!
+
+target 'MyApp' do
+    pod 'Dynamikos', :git => 'https://github.com/siam-biswas/Dynamikos.git'
+end
+```
+
+#### Manually (iOS 8+)
+
+To use this library in your project manually you may:  
+
+1. for Projects, just drag Dynamikos.swift to the project tree
+2. for Workspaces, include the whole Dynamikos.xcodeproj
 
 # Usage
 The magic is put together in a single function
