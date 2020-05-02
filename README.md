@@ -1,8 +1,4 @@
 # Dynamikos
-![CocoaPods](https://img.shields.io/cocoapods/v/SwiftyJSON.svg)
-
-[Platform](https://img.shields.io/badge/platforms-iOS%208.0)
-
 A solution for UI Consistency in Swift 
 
 ### Without dynamikos
