@@ -14,7 +14,7 @@ A solution for UI Consistency in Swift
 
 
 # What is Dynamikos
-Its a very simple yet useful tool for iOS developers who soar an oath to always create UI/UX programmatically. 
+Its a very simple yet useful tool for iOS developers who swore an oath to always create UI/UX programmatically. 
 
 When you are writing your UI/UX codes , have you ever felt that your design only looks good in devices with large sized display but something missing in small or medium display ?
 
@@ -32,7 +32,7 @@ Min (80%): iPhone 4,4s,5,5s,5c,SE first gen
 ```
 Now the one an only rule is , Every time we set a constant value for UI elements (position,size,inset) or set a font size for labels, rather than using the exact value we use adjusted value based on category percentage. 
 
-For an example, lets say we have a button with (height: 40 , width: 60). After using dynamikos the adjusted values will be -
+For an example, lets say we have a button with (height: 40 , width: 60). After using dynamikos the adjusted values will be
 
 ```
 Max (100%): (height: 40, width: 60)
@@ -98,7 +98,7 @@ anyLabel.font = UIFont.boldSystemFont(ofSize: 16.dynamic())
 anyLabel.font = UIFont.systemFont(ofSize: 14.dynamic())
 ```
 
-For configure the category percentage based on your requirement 
+For configuring the category percentage based on your requirement 
 ```Swift
 DynamikosConfig.set(max: 100, mid: 90, min: 80)
 ```
