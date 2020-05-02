@@ -1,12 +1,11 @@
 # Dynamikos
 A solution for UI Consistency in Swift 
 
-
-### Without dynamic size
+### Without dynamikos
 
 ![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/static.png "Static Sizing Preview")
 
-### With dynamic size
+### With dynamikos
 
 ![alt text](https://github.com/siam-biswas/DynamicSize/blob/master/dynamic.png "Static Sizing Preview")
 
@@ -38,8 +37,8 @@ Mid (90%): (height: 36, width: 54)
 Min (80%): (height: 32, width: 48)
 ```
 
-# Installation
-Just copy the "Dynamikos.swift" file in your project
+# Integration
+just drag "Dynamikos.swift" file to the project tree
 
 
 # Usage
@@ -72,7 +71,7 @@ With layer properties
 anyView.layer.cornerRadius = 8.dynamic()
 anyView.layer.borderWidth = 5.dynamic()
 ```
- 
+
 With font size
 ```Swift
 anyLabel.font = UIFont.boldSystemFont(ofSize: 16.dynamic()) 
@@ -83,3 +82,4 @@ For configure the category percentage based on your requirement
 ```Swift
 DynamikosConfig.set(max: 100, mid: 90, min: 80)
 ```
+
